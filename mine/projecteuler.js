@@ -1,6 +1,6 @@
 
 var minNo = 1;
-var maxNo = 10;
+var maxNo = 20;
 
 var println = function(msg) {
 	document.write('' + msg);
