@@ -17,26 +17,29 @@ solve(function() {
 		}
 		return sum;
 	};
-	
-	var a = '1';
-	var b = '1';
-	var i = 3;
-	var fib;
-	
-	while (true) {
-		fib = add(a, b);
-		if (fib.length == 1000) {
-			break;
+	var multiply = function(a, b) {
+		var n = +b;
+		var sum = '0';
+		for (var i = 0; i < n; i += 1) {
+			sum = add(sum, a);
 		}
-		if (i % 2 == 0) {
-			a = fib;
-		} else {
-			b = fib;
+		return sum;
+	};
+	var fact = function(n) {
+		var f = '1';
+		for (var i = 2; i <= n; i += 1) {
+			f = multiply(f, '' + i);
 		}
-		i += 1;
+		return f;
+	};
+
+	var f = fact(100);
+	var sum = 0;
+	for (var i = 0; i < f.length; i += 1) {
+		sum += +f.charAt(i);
 	}
 	
-	println(i);
-	assertEquals(4782, i);
+	println(sum);
+	assertEquals(648, sum);
 });
 	

@@ -39,7 +39,7 @@ solve(function() {
 			c += dc;
 		}
 		max = Math.max(max, prod);
-	}
+	};
 	
 	for (var r = 0; r < numCells; r += 1) {
 		for (var c = 0; c < numCells; c += 1) {

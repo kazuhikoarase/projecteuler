@@ -107,7 +107,7 @@ solve(function() {
 		var getDigit = function(s, digit) {
 			var i = s.length - 1 - digit;
 			return i >= 0? +s.charAt(i) : 0;
-		}
+		};
 		var carry = 0;
 		var sum = '';
 		var len = Math.max(a.length, b.length);

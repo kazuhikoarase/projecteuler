@@ -1,5 +1,5 @@
 
-var minNo = 16;
+var minNo = 1;
 var maxNo = 30;
 
 var println = function(msg) {
